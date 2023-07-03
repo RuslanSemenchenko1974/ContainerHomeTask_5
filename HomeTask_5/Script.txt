@@ -1,0 +1,36 @@
+1)создать сервис, состоящий из 2 различных контейнеров: 1 - веб, 2 - БД
+
+vim compose.yaml
+
+sudo docker compose up -d
+
+sudo docker ps -a
+
+2) далее необходимо создать 3 сервиса в каждом окружении (dev, prod, lab)
+3) по итогу на каждой ноде должно быть по 2 работающих контейнера
+
+sudo hostname node-1
+
+sudo docker swarm init
+
+sudo docker swarm join --token SWMTKN-1-25u9plt2khpccu6qiwwijt7gvwpqdxc0lw7rwtp4jj0gkdel7g-1myx0cgizuolvs13u2lzya1pm 192.168.1.51:2377
+
+sudo docker node ls
+
+sudo docker exec -it cf bash
+
+ls
+cd usr
+cd share
+cd nginx
+cd htmlvim
+
+
+
+
+
+
+ 
+
+
+
